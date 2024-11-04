@@ -1,0 +1,161 @@
+
+
+.Upskill .Header,
+.Upskill p,
+.Upskill .Chapter .box,
+.Upskill .Chapter .time-stamp{
+    display: flex;
+    align-items: center;
+}
+
+.Upskill .chapter-toggle,
+.Upskill .chapter-toggle .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Upskill{
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.Upskill .Header{
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px #D6F4FF;
+}
+
+.Upskill .options{
+    display: flex;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #EFF5FF 0%, rgba(239, 245, 255, 0) 100%);
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:800px) {
+    .Upskill .Header span,
+    .Upskill .help span{
+        display: none;
+    }
+    
+}
+
+
+.Upskill .Header p{
+    font-size: 14px;
+    padding: 8px 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.Upskill .help p{
+    border: 1px solid #7a91b5;
+}
+
+.Upskill .Header p:hover{
+    background-color: #d6f4ff4d;
+}
+
+.Upskill  .Header .active{
+    box-shadow: 0 1px 1px #7a91b5;
+    border: 1px solid #7a91b5;
+}
+
+.Upskill .lessons-container{
+    width: 100%;
+    min-height: calc(100vh - 240px);
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+/* ---------Chapter--------- */
+
+.Upskill .Chapter{
+    width: 230px;
+    min-height: 500px;
+    border-radius: 5px;
+    transition: all 0.5s linear;
+    position: relative;
+}
+
+.Upskill .Chapter .box{
+    width: 100%;
+    height: 50px;
+    /* background-color: violet; */
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 1px 1px #eff5ff;
+}
+
+.Upskill .Chapter .box p{
+    font-size: 14px;   
+}
+
+.Upskill .Chapter .active p:nth-child(1){
+    font-weight: 500;
+}
+
+.Upskill .Chapter .active{
+    background-color: #eff5ff;
+}
+
+.Upskill .Chapter .time-stamp{
+    gap: 5px;
+}
+
+.Upskill .Chapter .time-stamp p{
+    font-weight: 300;
+    color: #7a91b5;
+}
+
+.Upskill .chapter-toggle{
+    position: absolute;
+    left: 0;
+    top: calc(50% - 25px);
+    width: 20px;
+    height: 50px;
+    background-color: #D6F4FF;
+    border-radius: 0 5px 5px 0;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+    .Upskill .Chapter{
+        position: absolute;
+        transform: translateX(-260px);
+    }
+
+    .Upskill .Chapter_open{
+        transform: translateX(0);
+    }
+
+    .Upskill .Chapter_open .chapter-toggle{
+        border-radius: 5px 0 0 5px;
+    }
+
+    .Upskill .chapter-toggle{
+        display: flex;
+        position: absolute;
+        left: 102%;
+    }
+    .Upskill .Chapter_open .chapter-toggle{
+        left: 90%;
+    }
+}
