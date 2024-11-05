@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BriefcaseSvg, CalendarSvg, InformationSvg } from "../../../svg";
 
 function Header() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(1);
   const Options = [
     {
       title: "Mentor Sessions",

@@ -1,3 +1,4 @@
 import { chapterList } from "./ChapterJson";
+import { SvgRender, partList } from "./PartJson";
 
-export {chapterList}
+export {chapterList,SvgRender,partList}

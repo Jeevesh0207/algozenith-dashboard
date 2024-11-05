@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
 import {
   Contest,
@@ -9,9 +11,14 @@ import {
   Upskill,
 } from "./components";
 import { BellSvg } from "./svg";
-import { Routes, Route } from "react-router-dom";
 
 function App() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    navigate("/upskill");
+  }, [navigate]);
+
   return (
     <div className="app-container">
       <Sidebar />
@@ -22,7 +29,7 @@ function App() {
         </div>
         <div className="content-page">
           <div className="content-container">
-            <Routes >
+            <Routes>
               <Route element={<Dashboard />} path="/dashboard" />
               <Route element={<Learn />} path="/learn" />
               <Route element={<Forums />} path="/forums" />

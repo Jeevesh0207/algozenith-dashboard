@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Upskill.css";
-import { Header } from "./components";
+import { Header, Part } from "./components";
 import Chapter from "./components/Chapter";
 import { chapterList } from "../../data";
 
@@ -16,6 +16,11 @@ function Upskill() {
           chapterIndex={chapterIndex}
           setChapterIndex={setChapterIndex}
         />
+        <div className="chapter-part">
+          <Part id={1}/>
+          <Part id={2}/>
+          <Part id={3}/>
+        </div>
       </div>
     </div>
   );

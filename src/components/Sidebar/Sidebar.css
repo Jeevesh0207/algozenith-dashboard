@@ -91,6 +91,7 @@
         display: flex;
         position: absolute;
         right: -100px;
+        top: 27px;
         transition: all 0.5s;
         animation: glow 1s linear 0.8;
     }

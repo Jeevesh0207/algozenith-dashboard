@@ -14,6 +14,10 @@ import InformationSvg from "./InformationSvg"
 import ClockOutlineSvg from "./ClockOutlineSvg";
 import LeftArrowSvg from "./LeftArrowSvg";
 import RightArrowSvg from "./RightArrowSvg";
+import CopyPasteSvg from "./CopyPasteSvg"
+import PlaySvg from "./PlaySvg";
+import QuestionMarkSvg from "./QuestionMarkSvg";
+import CodingSvg from "./CodingSvg";
 
 export {
   MenuSvg,
@@ -31,5 +35,9 @@ export {
   InformationSvg,
   ClockOutlineSvg,
   LeftArrowSvg,
-  RightArrowSvg
+  RightArrowSvg,
+  CopyPasteSvg,
+  PlaySvg,
+  QuestionMarkSvg,
+  CodingSvg
 };
