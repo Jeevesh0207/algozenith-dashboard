@@ -270,10 +270,13 @@
     gap: 10px;
   }
   .Upskill .Part .right {
-    gap: 5px;
+    gap: 10px;
   }
-  .Upskill .Part .info{
-    justify-content: flex-end;
+  .Upskill .Part .part-header .right p{
+    font-size: 13px;
+  }
+  .Upskill .Part .part-header .complete p{
+    font-size: 12px;
   }
   .Upskill .Part .info .drop{
     position: absolute;
