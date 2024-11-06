@@ -2,8 +2,8 @@ import React from 'react'
 
 function Contest() {
   return (
-    <div className='Contest'>
-
+    <div className='Dashboard Contest'>
+        <h1>Contest</h1>
     </div>
   )
 }

@@ -2,8 +2,8 @@ import React from 'react'
 
 function Forums() {
   return (
-    <div className='Forums'>
-
+    <div className='Dashboard Forums'>
+        <h1>Forums</h1>
     </div>
   )
 }

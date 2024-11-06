@@ -1,0 +1,18 @@
+
+.Dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Dashboard{
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    /* background-color: antiquewhite; */
+}
+
+.Dashboard h1{
+    font-size: 30px;
+    color: 172b4dd9;
+    font-weight: 600;
+}

@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [istoggleMenu, setisToggleMenu] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(3);
+  const [activeIndex, setActiveIndex] = useState(0);
   const Menu_List = useMemo(
     () => [
       {
